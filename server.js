@@ -1,8 +1,11 @@
 var Hapi = require('hapi');
+var ProjectRepo = require('./lib/projectRepo');
 
 var server = new Hapi.Server();
 
 server.connection({ port: 8080 });
+
+ProjectRepo.initialize();
 
 // server.ext('onPreResponse', function(request, reply){
 // 	if(request.response.isBoom){

@@ -30,13 +30,25 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    	
 
-        <div class="button">
-            <a href="admin" class="btn btn-success btn-lg" role="button">
-                Go to the Admin Dashboard
-            </a>
-        </div>
+       	<table style="width:100%">
+       		<thead>
+       			<tr>
+       				<th>Start Date</th>
+    				<th>Name</th>
+    				<th>Type</th>
+  				</tr>
+       		</thead>
+       		<tbody>
+       			{{#each projects}}
+       			<tr>
+    				<td>{{start_date}}</td>
+    				<td>{{name}}</td>
+    				<td>{{type}}</td>
+  				</tr>
+  				{{/each}}
+       		</tbody>
+		</table>
 
         <hr>
 
@@ -60,4 +72,5 @@
         </script> -->
     </body>
 </html>
+
 
