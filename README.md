@@ -1,2 +1,2 @@
 # bonfire
-software development project management application
+nodejs development project management application
