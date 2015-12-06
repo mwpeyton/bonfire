@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mwpeyton/bonfire/issues"
   },
-  "homepage": "https://github.com/mwpeyton/bonfire#readme"
+  "homepage": "https://github.com/mwpeyton/bonfire#readme",
+  "dependencies": {
+    "hapi": "^11.1.2"
+  }
 }
